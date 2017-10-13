@@ -10,8 +10,8 @@
   //
 
   // BASE URL PATH FOR FILES
-  var SERVER = "http://ads.diwanee.com/mraid/phonecall/";
-  /*                                                 ---->  in this line is for DEVELOPMENT :: no need for editing ---->  */ SERVER = (location.host.indexOf("ads.diwanee.com") !== -1) ? "http://ads.diwanee.com/mraid/phonecall/" : SERVER;;;;;;;;;;;;; SERVER = (location.hash.indexOf("local") !== -1) ? "" : SERVER;
+  var SERVER = "http://ads.diwanee.com/mraid/phonecall-img/";
+  /*                                                 ---->  in this line is for DEVELOPMENT :: no need for editing ---->  */ SERVER = (location.host.indexOf("ads.diwanee.com") !== -1) ? "http://ads.diwanee.com/mraid/phonecall-img/" : SERVER;;;;;;;;;;;;; SERVER = (location.hash.indexOf("local") !== -1) ? "" : SERVER;
 
   // PAGE HOME
   // main image
@@ -35,12 +35,11 @@
 
   // PAGE DECLINE
   decline = {
-    type: "video", // [ "image" | "video" | "url" ]
-    clickURL: false,
+    type: "image", // [ "image" | "video" | "url" ]
+    clickURL: "https://www.nasa.gov/",
     elements: [
-      "http://www.warrini.com/assets/video/warrini-app-intro.mp4"
-    ],
-    onEnd: "image"// what should happen when video ended ["loop" | "close" | "image" | `URL` ]
+      "https://spaceplace.nasa.gov/review/whats-older/GALEX-M81-lrg.en.jpg"
+    ]
   };
 
   // COPIRIGHTS IMAGE
@@ -51,6 +50,7 @@
     animType: "pulse", // type of button animation
     animInterval: 0.15, // speed of button animation (seconds)
   };
+
 
   // PARAMETERS FOR TRACKING
   tracking = {
@@ -70,7 +70,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phone Call MRAID Vid</title>
+  <title>Phone Call MRAID Img</title>
 
   <script src="mraid.js"></script>
 
